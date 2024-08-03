@@ -42,7 +42,7 @@ acabei tendo que pedir ajuda no servidor do frontend mentor, e lá me auxiliaram
 ainda tenho que aprender mais um pouco sobre grid mas tive um ótimo avanço nesse exercício.
 
 ## Resolução do exercício
-- Site da resolução:
+- Site da resolução: https://xlraullx.github.io/testimonials-grid/
 
 ## Autor 
 - Frontend Mentor - https://www.frontendmentor.io/profile/xlraullx
