@@ -1,3 +1,7 @@
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: "Barlow Semi Condensed", sans-serif;
     background-color: var(--Light-grayish-blue);
@@ -12,9 +16,8 @@ body{
     grid:'daniel-testimonial daniel-testimonial jonathan-testimonial kira-testimonial' 285px 
          'jeanette-testimonial patrick-testimonial patrick-testimonial kira-testimonial' 268px 
          / 255px 255px 255px 255px;
-    width: 1110px;
     gap: 25px 30px; 
-    font-size: 13px;
+    font-size: 1.3rem;
 }
  
 .profile{
@@ -26,7 +29,7 @@ body{
 }
 
 .verified{
-    font-size: 11px;
+    font-size: 1.1rem;
     opacity: 50%;
 }
 
@@ -42,7 +45,7 @@ body{
 
 .quote{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2.0rem;
     color: var(--Light-grayish-blue);
     margin-bottom: 20px;
 }
@@ -59,10 +62,10 @@ body{
 }
 
 .daniel-testimonial{
-        grid-area: daniel-testimonial;
-        background-color: var(--Moderate-violet);
-        position: relative;
-        z-index: 0;
+    grid-area: daniel-testimonial;
+    background-color: var(--Moderate-violet);
+    position: relative;
+    z-index: 0;
 }
 
 .daniel-testimonial::after{
@@ -108,4 +111,47 @@ body{
 .kira-testimonial{
     grid-area: kira-testimonial;
     background-color: var(--white);
+}
+
+@media (max-width: 1150px){
+    body{
+        height: auto;
+    }
+    
+    .testimonials{
+        margin: 25px 0px 50px;
+        grid: 'daniel-testimonial daniel-testimonial' 
+              'jeanette-testimonial jonathan-testimonial' 
+              'patrick-testimonial  patrick-testimonial'
+              'kira-testimonial  kira-testimonial' / 280px 280px ;
+    }
+
+    .testimonials .review{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px){
+    .testimonials{
+        grid: 'daniel-testimonial' 240px 
+              'daniel-testimonial' 200px
+              'jonathan-testimonial' 270px
+              'jeanette-testimonial' 240px
+              'patrick-testimonial' 240px
+              'patrick-testimonial' 160px
+              'kira-testimonial' 240px
+              'kira-testimonial' / 300px;      
+    }
+
+    .daniel-testimonial, .jonathan-testimonial, .jeanette-testimonial, .patrick-testimonial, .kira-testimonial{
+        padding: 25px 40px 25px 30px;
+    }
+
+    .daniel-testimonial::after{
+        right: 25px;
+    }
+
+    .testimonials .review{
+        font-size: 1.3rem;
+    }
 }
